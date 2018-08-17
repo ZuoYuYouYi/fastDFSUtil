@@ -20,26 +20,41 @@ public class FastDFSUntil {
      * 配置文件
      */
     private static final String FDFS_CLIENT = System.getProperty("user.dir") + "/src/main/resources/fdfs_client.conf";
+
     /**
-     * 核心对象
+     * 存储客户端
      */
-    private static StorageClient1 storageClient;
+    private StorageClient1 storageClient;
+
+    /**
+     * 跟踪客户端
+     */
+    private static TrackerClient trackerClient;
+
+    /**
+     * 跟踪服务
+     */
+    private TrackerServer trackerServer;
 
     static {
         try {
 
             ClientGlobal.init(FDFS_CLIENT);
-            TrackerClient trackerClient = new TrackerClient();
-            TrackerServer trackerServer = trackerClient.getConnection();
-            storageClient = new StorageClient1(trackerServer, null);
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (MyException e) {
+            trackerClient = new TrackerClient();
+        } catch (IOException | MyException e) {
             e.printStackTrace();
         }
     }
 
     private FastDFSUntil() {
+    }
+
+    /**
+     * 打开跟踪服务
+     */
+    private void openTrackerServer() throws IOException {
+            trackerServer = trackerClient.getConnection();
+        storageClient = new StorageClient1(trackerServer, null);
     }
 
     /**
@@ -69,9 +84,12 @@ public class FastDFSUntil {
         nameValuePairs[2] = new NameValuePair("fileSize", String.valueOf(multipartFile.getSize()));
         String path = null;
         try {
+            openTrackerServer();
             path = storageClient.upload_appender_file1(multipartFile.getBytes(), ext, nameValuePairs);
         } catch (Exception e) {
             e.printStackTrace();
+        } finally {
+            trackerServer.close();
         }
         return path;
     }
@@ -87,9 +105,12 @@ public class FastDFSUntil {
     public byte[] downloadFile(String groupName, String remoteFileName) throws Exception {
         byte[] content = null;
         try {
+            openTrackerServer();
             content = storageClient.download_file(groupName, remoteFileName);
         } catch (Exception e) {
             e.printStackTrace();
+        } finally {
+            trackerServer.close();
         }
         return content;
     }
@@ -105,9 +126,12 @@ public class FastDFSUntil {
     public NameValuePair[] getFileMate(String groupName, String remoteFileName) throws Exception {
         NameValuePair[] nameValuePairs = null;
         try {
+            openTrackerServer();
             nameValuePairs = storageClient.get_metadata(groupName, remoteFileName);
         } catch (Exception e) {
             e.printStackTrace();
+        } finally {
+            trackerServer.close();
         }
         return nameValuePairs;
     }
@@ -123,9 +147,12 @@ public class FastDFSUntil {
     public FileInfo getFileInfo(String groupName, String remoteFileName) throws Exception {
         FileInfo fileInfo = null;
         try {
+            openTrackerServer();
             fileInfo = storageClient.get_file_info(groupName, remoteFileName);
         } catch (Exception e) {
             e.printStackTrace();
+        } finally {
+            trackerServer.close();
         }
         return fileInfo;
     }

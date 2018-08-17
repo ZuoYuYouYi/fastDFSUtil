@@ -31,10 +31,10 @@ public class UtilTest {
      */
     @Test
     public void testOne(){
-        File file = new File("/home/zuoyu/Images/Screenshot_2018-07-06_14-36-40.png");
+        File file = new File("/home/zuoyu/Images/Screenshot_2018-07-27_13-53-58.png");
         try {
             FileInputStream fileInputStream = new FileInputStream(file);
-            MultipartFile multipartFile = new MockMultipartFile(file.getName(), "Screenshot_2018-07-06_14-36-40.png", "png", fileInputStream);
+            MultipartFile multipartFile = new MockMultipartFile(file.getName(), "Screenshot_2018-07-27_13-53-58.png", "png", fileInputStream);
             String path = fastDFSUntil.uploadFile(multipartFile);
             System.out.println(path);
         } catch (Exception e) {
@@ -62,7 +62,7 @@ public class UtilTest {
     @Test
     public void testThree(){
         try {
-            NameValuePair[] nameValuePairs = fastDFSUntil.getFileMate("group1", "M00/00/00/fwAAAVt1MNmEP881AAAAAHeiNMk483.png");
+            NameValuePair[] nameValuePairs = fastDFSUntil.getFileMate("group1", "M00/00/00/fwAAAVt2fCWEWBx2AAAAAL2LQWw113.png");
             for (NameValuePair nameValuePair : nameValuePairs){
                 System.out.println(nameValuePair.getName() + ":" + nameValuePair.getValue());
             }
@@ -77,7 +77,7 @@ public class UtilTest {
     @Test
     public void testFour(){
         try {
-            FileInfo fileInfo = fastDFSUntil.getFileInfo("group1", "M00/00/00/fwAAAVt1MNmEP881AAAAAHeiNMk483.png");
+            FileInfo fileInfo = fastDFSUntil.getFileInfo("group1", "M00/00/00/fwAAAVt2fCWEWBx2AAAAAL2LQWw113.png");
             System.out.println(fileInfo.toString());
         } catch (Exception e) {
             e.printStackTrace();
