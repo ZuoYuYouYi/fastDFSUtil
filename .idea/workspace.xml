@@ -8,7 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7474d7ab-c34a-469d-95ee-3f2141fb7b77" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zuoyu/core/FastDFSUntil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zuoyu/core/FastDFSUntil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/org.zuoyu/UtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/org.zuoyu/UtilTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -30,23 +29,25 @@
     <session id="1882804978">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.15" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.15" value="4" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="3" />
-          <entry key="java" value="1914" />
+          <entry key="java" value="2141" />
+          <entry key="txt" value="21" />
           <entry key="xml" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1914" />
-          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="JAVA" value="2141" />
+          <entry key="PLAIN_TEXT" value="24" />
           <entry key="XML" value="41" />
         </counts>
       </usages-collector>
@@ -78,7 +79,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/zuoyu/core/FastDFSUntil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="747">
+            <state relative-caret-position="-259">
               <caret line="154" column="34" selection-start-line="154" selection-start-column="34" selection-end-line="154" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -90,10 +91,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/org.zuoyu/UtilTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+            <state relative-caret-position="1681">
+              <caret line="58" column="80" selection-start-line="58" selection-start-column="80" selection-end-line="58" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2621#2622#0" expanded="true" />
+                <element signature="e#2691#2692#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,7 +106,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/fdfs_client.conf">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+              <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -125,6 +128,18 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>&quot;M00/00/00/fwAAAVt2fCWEWBx2AAAAAL2LQWw113.png&quot;</find>
+      <find>REMOTEFILENAME</find>
+      <find>&quot;group1&quot;</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>REMOTEFILENAME</replace>
+      <replace>FILENAME</replace>
+      <replace>groupName</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -167,7 +182,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -234,14 +249,14 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534491831048" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534765999524" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -263,6 +278,22 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.UtilTest.testFour">
+    <configuration name="UtilTest.testFive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fastdfsbase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.zuoyu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.zuoyu" />
+      <option name="MAIN_CLASS_NAME" value="org.zuoyu.UtilTest" />
+      <option name="METHOD_NAME" value="testFive" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UtilTest.testFour" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="fastdfsbase" />
       <extension name="coverage">
@@ -405,12 +436,14 @@
       <item itemvalue="JUnit.UtilTest.testTwo" />
       <item itemvalue="JUnit.UtilTest.testThree" />
       <item itemvalue="JUnit.UtilTest.testFour" />
+      <item itemvalue="JUnit.UtilTest.testFive" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.UtilTest.testFour" />
         <item itemvalue="JUnit.UtilTest.testThree" />
         <item itemvalue="JUnit.UtilTest.testTwo" />
+        <item itemvalue="JUnit.UtilTest.testFive" />
         <item itemvalue="JUnit.UtilTest.testOne" />
       </list>
     </recent_temporary>
@@ -426,50 +459,62 @@
       <option name="presentableId" value="Default" />
       <updated>1534397951033</updated>
       <workItem from="1534397952263" duration="12727000" />
-      <workItem from="1534488519063" duration="1856000" />
+      <workItem from="1534488519063" duration="2048000" />
+      <workItem from="1534589459443" duration="1278000" />
+      <workItem from="1534760064139" duration="743000" />
+      <workItem from="1534761500276" duration="859000" />
+      <workItem from="1534764984320" duration="959000" />
     </task>
+    <task id="LOCAL-00001" summary="对trackerServer进行了优化">
+      <created>1534491889733</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1534491889733</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UtilTest_testThree - 2018.08.16 at 16h 52m 00s.xml">
-      <configuration name="UtilTest.testThree" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UtilTest_testThree - 2018.08.16 at 16h 57m 32s.xml">
-      <configuration name="UtilTest.testThree" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UtilTest_testFour - 2018.08.16 at 17h 00m 36s.xml">
-      <configuration name="UtilTest.testFour" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UtilTest_testTwo - 2018.08.16 at 17h 14m 53s.xml">
-      <configuration name="UtilTest.testTwo" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UtilTest_testOne - 2018.08.17 at 15h 39m 51s.xml">
+    <history-entry file="UtilTest_testOne - 2018.08.20 at 18h 16m 54s.xml">
       <configuration name="UtilTest.testOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UtilTest_testOne - 2018.08.17 at 15h 41m 26s.xml">
-      <configuration name="UtilTest.testOne" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UtilTest_testTwo - 2018.08.17 at 15h 42m 42s.xml">
+    <history-entry file="UtilTest_testTwo - 2018.08.20 at 18h 25m 01s.xml">
       <configuration name="UtilTest.testTwo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UtilTest_testThree - 2018.08.17 at 15h 42m 53s.xml">
-      <configuration name="UtilTest.testThree" configurationId="JUnit" />
+    <history-entry file="UtilTest_testTwo - 2018.08.20 at 19h 30m 15s.xml">
+      <configuration name="UtilTest.testTwo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UtilTest_testThree - 2018.08.17 at 15h 43m 29s.xml">
-      <configuration name="UtilTest.testThree" configurationId="JUnit" />
+    <history-entry file="UtilTest_testTwo - 2018.08.20 at 19h 32m 42s.xml">
+      <configuration name="UtilTest.testTwo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UtilTest_testFour - 2018.08.17 at 15h 43m 52s.xml">
-      <configuration name="UtilTest.testFour" configurationId="JUnit" />
+    <history-entry file="UtilTest_testTwo - 2018.08.20 at 19h 38m 40s.xml">
+      <configuration name="UtilTest.testTwo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UtilTest_testTwo - 2018.08.20 at 19h 39m 33s.xml">
+      <configuration name="UtilTest.testTwo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UtilTest_testOne - 2018.08.20 at 19h 40m 40s.xml">
+      <configuration name="UtilTest.testOne" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UtilTest_testFive - 2018.08.20 at 19h 49m 17s.xml">
+      <configuration name="UtilTest.testFive" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UtilTest_testFive - 2018.08.20 at 19h 50m 31s.xml">
+      <configuration name="UtilTest.testFive" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UtilTest_testFive - 2018.08.20 at 19h 50m 40s.xml">
+      <configuration name="UtilTest.testFive" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14583000" />
+    <option name="totallyTimeSpent" value="18614000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1922" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25375536" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15182403" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -480,7 +525,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32890365" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32890365" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -490,10 +535,10 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="CheckStyle" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32821077" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32779622" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
-      <window_info anchor="bottom" id="Version Control" order="15" />
+      <window_info anchor="bottom" id="Version Control" order="15" weight="0.32890365" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -508,8 +553,38 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="对trackerServer进行了优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="对trackerServer进行了优化" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
@@ -546,7 +621,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/fdfs_client.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -559,7 +634,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/zuoyu/core/FastDFSUntil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="747">
+        <state relative-caret-position="-259">
           <caret line="154" column="34" selection-start-line="154" selection-start-column="34" selection-end-line="154" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -569,10 +644,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/org.zuoyu/UtilTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+        <state relative-caret-position="1681">
+          <caret line="58" column="80" selection-start-line="58" selection-start-column="80" selection-end-line="58" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2621#2622#0" expanded="true" />
+            <element signature="e#2691#2692#0" expanded="true" />
           </folding>
         </state>
       </provider>
