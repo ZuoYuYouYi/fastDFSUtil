@@ -7,7 +7,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.web.multipart.MultipartFile;
-import org.zuoyu.core.FastDFSUntil;
+import org.zuoyu.core.FastDfsUntil;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -22,7 +22,7 @@ import java.util.Date;
  **/
 public class UtilTest {
 
-    private FastDFSUntil fastDFSUntil = null;
+    private FastDfsUntil FastDfsUntil = null;
 
     private final String FILENAME = "group1/M00/00/00/fwAAAVt6qLiEYMbAAAAAAL2LQWw433.png";
     private String remoteFileName = null;
@@ -31,10 +31,10 @@ public class UtilTest {
 
     @Before
     public void before() {
-        fastDFSUntil = FastDFSUntil.getFastDFSUntil();
-        remoteFileName = fastDFSUntil.getRemoteFileName(FILENAME);
-        groupName = fastDFSUntil.getGroup(FILENAME);
-        contentType = fastDFSUntil.getExtension(FILENAME);
+        FastDfsUntil = FastDfsUntil.getFastDfsUntil();
+        remoteFileName = FastDfsUntil.getRemoteFileName(FILENAME);
+        groupName = FastDfsUntil.getGroup(FILENAME);
+        contentType = FastDfsUntil.getExtension(FILENAME);
     }
 
     /**
@@ -46,7 +46,7 @@ public class UtilTest {
         try {
             FileInputStream fileInputStream = new FileInputStream(file);
             MultipartFile multipartFile = new MockMultipartFile(file.getName(), "Screenshot_2018-07-27_13-53-58.png", "png", fileInputStream);
-            String path = fastDFSUntil.uploadFile(multipartFile);
+            String path = FastDfsUntil.uploadFile(multipartFile);
             System.out.println(path);
         } catch (Exception e) {
             e.printStackTrace();
@@ -59,7 +59,7 @@ public class UtilTest {
     @Test
     public void testTwo() {
         try {
-            byte[] content = fastDFSUntil.downloadFile(groupName, remoteFileName);
+            byte[] content = FastDfsUntil.downloadFile(groupName, remoteFileName);
             FileOutputStream fileOutputStream = new FileOutputStream("/home/zuoyu/Downloads/" + new Date() + contentType);
             IOUtils.write(content, fileOutputStream);
         } catch (Exception e) {
@@ -73,7 +73,7 @@ public class UtilTest {
     @Test
     public void testThree() {
         try {
-            NameValuePair[] nameValuePairs = fastDFSUntil.getFileMate(groupName, remoteFileName);
+            NameValuePair[] nameValuePairs = FastDfsUntil.getFileMate(groupName, remoteFileName);
             for (NameValuePair nameValuePair : nameValuePairs) {
                 System.out.println(nameValuePair.getName() + ":" + nameValuePair.getValue());
             }
@@ -88,7 +88,7 @@ public class UtilTest {
     @Test
     public void testFour() {
         try {
-            FileInfo fileInfo = fastDFSUntil.getFileInfo(groupName, remoteFileName);
+            FileInfo fileInfo = FastDfsUntil.getFileInfo(groupName, remoteFileName);
             System.out.println(fileInfo.toString());
         } catch (Exception e) {
             e.printStackTrace();
